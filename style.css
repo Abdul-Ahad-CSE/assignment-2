@@ -369,6 +369,54 @@
     color: #000;
 }
 
+/* --- SECTION 5 page-5 STYLES (JOIN) --- */
+ #page-5 {
+    
+    background-image: url('assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    text-align: center;
+    padding-block: 100px; 
+}
+#page-5 .join-content h2 {
+    font-size: 2.75rem; 
+    font-weight: 600;
+    margin: 0 0 30px 0;
+}
+
+#page-5 .subscribe-form input::placeholder {
+  color: rgb(68, 62, 62);       
+  opacity: 1;
+        
+}
+
+#page-5 .subscribe-form input {
+  color: black;
+  width: 300px;  
+  padding-left: 10px;   
+  border: none;
+}
+
+#page-5 .subscribe-form button {
+    background-color: #F56708;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0; 
+    transition: background-color 0.3s ease;
+    padding: 5px;
+    border: none;
+}
+
+#page-5 .subscribe-form button:hover {
+    background-color: #4709ba;
+} 
 
 /* Responsive style for iphone 14 and 15 pro: 767px */
 
@@ -432,6 +480,24 @@
         grid-row: auto;
         min-height: 200px;
     }
+
+    /* page-5 */
+    #page-5 {
+        padding-inline: 0px; 
+    }
+
+    #page-5 .join-content h2 {
+        font-size: 2rem; 
+    }
+
+    #page-5 .subscribe-form {
+        max-width: 100%;
+    }
+    #page-5 .subscribe-form input {
+        color: black;
+        width: 200px; 
+              
+        }
 
 
 }
