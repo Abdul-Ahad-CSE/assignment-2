@@ -194,6 +194,79 @@
     background-color: #3c0ad0; 
 }
 
+/* --- SECTION 3 page-3 STYLES (PLANTS LOVER) --- */
+#page-3 {
+    background-color: #f8f9fa; 
+    padding-block: 80px; 
+}
+
+#page-3 .lover-content {
+    display: flex;
+    align-items: center;
+    gap: 60px; 
+}
+
+#page-3 .image-container,
+#page-3 .text-container {
+    flex: 1; 
+}
+
+#page-3 .image-container {
+    position: relative;
+}
+
+#page-3 .main-image {
+    width: 100%;
+    display: block;
+}
+
+  #page-3 .trusted-badge {
+    position: absolute; 
+    top: -90px;
+    right: -90px;
+    width: 250px;
+    height: auto;
+    filter: drop-shadow(3px 5px 6px rgba(0, 0, 0, 0.25));
+}  
+
+#page-3 .text-container h2 {
+    font-family: 'Georgia', serif; 
+    font-size: 3.5rem;
+    font-weight: 700px;
+    margin: 0 0 30px 0;
+    color: #212529;
+    line-height: 1.2;
+}
+
+#page-3 .text-container ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+#page-3 .text-container li {
+    padding-left: 20px; 
+    position: relative;
+    color: #6c757d;
+    line-height: 1.7;
+    font-size: 1.3rem;
+}
+
+#page-3 .text-container li:not(:last-child) {
+    margin-bottom: 20px; 
+}
+
+#page-3 .text-container li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #212529;
+    font-size: 1.2rem;
+}
+
+
+
 
 /* Responsive style for iphone 14 and 15 pro: 767px */
 
@@ -230,6 +303,20 @@
 
     #page-2 .section-title h2 {
         font-size: 2rem; 
+    }
+
+    /* page-3 */
+    #page-3 .lover-content {
+        flex-direction: column; 
+        gap: 40px;
+    }
+
+    #page-3 .text-container h2 {
+        font-size: 2rem; 
+    }
+
+    #page-3 .trusted-badge {
+        display: none;
     }
 
 
