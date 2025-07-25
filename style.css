@@ -418,6 +418,59 @@
     background-color: #4709ba;
 } 
 
+/* footer started */
+footer {
+    background-color: #f8f9fa;
+    padding-block: 20px;
+    color: #6c757d;
+}
+
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 40px;
+}
+
+.footer-col.about-col p {
+    margin: 0;
+    line-height: 1.6;
+}
+.footer-logo {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+.footer-col.links-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-col.links-col li:not(:last-child) {
+    margin-bottom: 15px;
+}
+.footer-col.links-col a {
+    text-decoration: none;
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+.footer-col.links-col a:hover {
+    color: #212529;
+}
+
+.footer-col.social-col {
+    justify-self: end; 
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icons img {
+    height: 24px;
+    width: auto;
+}
+
 /* Responsive style for iphone 14 and 15 pro: 767px */
 
 @media (max-width: 767px){
@@ -498,6 +551,21 @@
         width: 200px; 
               
         }
+
+    /* footer */
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-col.social-col {
+        justify-self: start;
+    }
+
+    .footer-col.links-col:nth-child(3) {
+        margin-top: 0px;
+    }
 
 
 }
